@@ -20,7 +20,7 @@ A simple weather application that fetches and displays the current temperature f
 ### Prerequisites
 
 - A web browser
-- An API key from [OpenWeatherMap](https://home.openweathermap.org/users/sign_up)
+- An API key from [weatherapi](https://www.weatherapi.com/)
 
 ### Installation
 
