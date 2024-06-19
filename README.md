@@ -26,4 +26,4 @@ A simple weather application that fetches and displays the current temperature f
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/weather-app.git
+   https://github.com/kkiishor/Weather-app.git
