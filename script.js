@@ -11,7 +11,7 @@ document.getElementById('getweather').addEventListener('click', function(){
   // *****************api************************
 
    async function apicall(inputcity){
-    const apikey = '23d614750d744b7d97c63013241906';
+    const apikey = `23d614750d744b7d97c63013241906`;
     const apiurl = `http://api.weatherapi.com/v1/current.json?key=23d614750d744b7d97c63013241906&q=${inputcity}`;
     this.inputcity = inputcity;
     const response = await fetch(apiurl)
@@ -21,6 +21,7 @@ document.getElementById('getweather').addEventListener('click', function(){
     text.textContent = data.current.condition.text;
     speed = data.current.wind_kph;
     wind.innerHTML = `wind speed: ${speed}kph`;
+    city.textContent = data.location.name;
 
    }
    apicall(inputcity)
@@ -35,7 +36,6 @@ document.getElementById('getweather').addEventListener('click', function(){
   let date = currentDate.getDate();
   let year = currentDate.getFullYear();
 
-  city.textContent = inputcity;
   datetime.textContent = `${dayOfWeek}, ${date} ${month} ${year}`;
 
 
