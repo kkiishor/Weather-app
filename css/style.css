@@ -14,12 +14,12 @@
   height: 100vh;
   background: rgb(38,29,221);
   background: linear-gradient(0deg, rgba(38,29,221,0.7259278711484594) 15%, rgba(26,217,41,1) 100%);
-  display: flex;
+  display: grid;
+  place-content: center;
 }
 
 #section #wrapper{
   border: 2px solid black;
-  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
