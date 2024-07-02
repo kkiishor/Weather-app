@@ -18,7 +18,7 @@ document.getElementById('getweather').addEventListener('click', function(){
 
     const data = await response.json();
     temp.textContent = data.current.temp_c;
-    text.textContent = data.current.condition.text;
+    text.innerHTML = data.current.condition.text;
     speed = data.current.wind_kph;
     wind.innerHTML = `wind speed: ${speed}kph`;
     city.textContent = data.location.name;
